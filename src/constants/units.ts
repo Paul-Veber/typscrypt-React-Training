@@ -1,5 +1,13 @@
-import {ImperialUnit, Attack, Defense, TauUnit, EldarUnit, TzeentchUnit} from "../types/index"
-// Imperium 
+import {
+  ImperialUnit,
+  Attack,
+  Defense,
+  TauUnit,
+  EldarUnit,
+  TzeentchUnit,
+  Unit,
+} from "../types/index"
+// Imperium
 
 export const ImperialGuard: ImperialUnit = {
   name: "imperialGuard",
@@ -7,16 +15,16 @@ export const ImperialGuard: ImperialUnit = {
   pointCost: 5,
   lifePoint: 1,
   attaquePower: Attack.Weak,
-  defensePower: Defense.Intermediate
+  defensePower: Defense.Intermediate,
 }
 
 export const SpaceMarine: ImperialUnit = {
   name: "Space Marine",
   army: "Imperium",
-  pointCost:15,
+  pointCost: 15,
   lifePoint: 1,
   attaquePower: Attack.Strong,
-  defensePower: Defense.Hard
+  defensePower: Defense.Hard,
 }
 
 // Tau
@@ -24,19 +32,19 @@ export const SpaceMarine: ImperialUnit = {
 export const FireWarrior: TauUnit = {
   name: "Fire Warrior",
   army: "Tau",
-  pointCost:9,
+  pointCost: 9,
   lifePoint: 1,
   attaquePower: Attack.Medium,
-  defensePower: Defense.Soft
+  defensePower: Defense.Soft,
 }
 
 export const Drone: TauUnit = {
   name: "Drone",
   army: "Tau",
-  pointCost:9,
+  pointCost: 9,
   lifePoint: 1,
   attaquePower: Attack.Feeble,
-  defensePower: Defense.Soft
+  defensePower: Defense.Soft,
 }
 
 // Eldar
@@ -47,7 +55,7 @@ export const Guardian: EldarUnit = {
   pointCost: 10,
   lifePoint: 10,
   attaquePower: Attack.Medium,
-  defensePower: Defense.Soft
+  defensePower: Defense.Soft,
 }
 
 export const Aspect: EldarUnit = {
@@ -56,16 +64,26 @@ export const Aspect: EldarUnit = {
   pointCost: 12,
   lifePoint: 2,
   attaquePower: Attack.Strong,
-  defensePower: Defense.Soft
+  defensePower: Defense.Soft,
 }
 
 // Tzeentch
 
-export const BlueHorror: TzeentchUnit = { 
+export const BlueHorror: TzeentchUnit = {
   name: "BlueHorror",
   army: "Tzeentch",
   pointCost: 10,
   lifePoint: 1,
   attaquePower: Attack.Strong,
-  defensePower: Defense.Soft
+  defensePower: Defense.Soft,
 }
+
+export const units: Unit[] = [
+  SpaceMarine,
+  ImperialGuard,
+  FireWarrior,
+  Drone,
+  Guardian,
+  Aspect,
+  BlueHorror,
+]

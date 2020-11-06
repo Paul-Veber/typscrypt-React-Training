@@ -1,8 +1,8 @@
 import React, { FunctionComponent, useState, useEffect } from "react"
-import { Army } from "./types/index"
-import { armies } from "./constants/index"
+import { Army } from "../../types/index"
+import { armies } from "../../constants/armies"
 
-const App: FunctionComponent = () => {
+export const ArmyList: FunctionComponent = () => {
   const [army, setArmy] = useState<Army[]>([])
   useEffect(() => {
     setArmy(armies)
@@ -36,4 +36,3 @@ const App: FunctionComponent = () => {
   )
 }
 
-export default App

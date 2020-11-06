@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
-    "baseUrl": ".",
+    "baseUrl": "./src/",
     "paths": {
-      "armyUnitsTypes": ["./src/types/*"],
-      "armyUnitsConstants": ["./src/constants/*"]
+      "types/*":["types/*"],
+      "constants/*":["constants/*"],
+      "components/*":["components/*"],
+      "utils/*":["utils/*"]
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

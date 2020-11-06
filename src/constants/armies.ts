@@ -1,5 +1,5 @@
 import {ImperialArmy, TauArmy, EldarArmy, TzeentchArmy, Army} from "../types/index"
-import {SpaceMarine, ImperialGuard, FireWarrior, Drone, Guardian, Aspect, BlueHorror} from "./units"
+import {SpaceMarine, ImperialGuard, FireWarrior, Drone, Guardian, Aspect, BlueHorror} from "./units" //bug when import from "constants/index"
 
 export const Imperium: ImperialArmy = {
   name: "Imperium",
@@ -27,4 +27,3 @@ export const Tzeentch: TzeentchArmy = {
 }
 
 export const armies: Army[] = [Imperium, Tau, Eldar, Tzeentch]
-

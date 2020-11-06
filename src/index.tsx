@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import { ArmyList } from './components/army-list/index'
+import { CombatComponent } from './components/combat-module/index'
 
 
 ReactDOM.render(
-  <App />,
+  <div>
+    <CombatComponent />
+    <ArmyList />
+  </div>,
   document.getElementById('root')
 );
